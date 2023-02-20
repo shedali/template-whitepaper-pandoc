@@ -8,7 +8,7 @@ titlepage: true
 logo: test.png
 colorlinks: true
 bibliography: references.bib
-abstract: This is gteh abstract
+abstract: The abstract
 references:
   - id: fenner2012a
     title: One-click science marketing
@@ -30,8 +30,7 @@ references:
 
 ## Table of Contents
 
-
-
+[@fenner2012a]
 
 ## References
 

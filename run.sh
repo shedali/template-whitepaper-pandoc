@@ -1,4 +1,6 @@
 #!/bin/bash
+# --template template.tex \
+# -H glossaries.tex \
 pandoc \
 --template template.tex \
 -H glossaries.tex \
