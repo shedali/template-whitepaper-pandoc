@@ -1,0 +1,7 @@
+- term: Pandoc
+  definition: A document conversion tool that supports various input and output formats.
+  plural: Pandocs
+  symbol: P
+- term: Markdown
+  definition: A lightweight markup language that is easy to read and write.
+  plural: Markdown documents
