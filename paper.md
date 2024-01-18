@@ -1,5 +1,5 @@
 ---
-title: Test Title
+title: Testing
 papersize: a4paper
 classoption: twocolumn
 metadata-file: glossary.yml
@@ -30,8 +30,7 @@ references:
 
 ## Table of Contents
 
+
 [@fenner2012a]
 
-## References
-
-
+## glossary

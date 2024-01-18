@@ -29,6 +29,8 @@
             nodejs-18_x
             nodePackages.pnpm
             git
+            # texlive.combined.scheme-basic
+            texliveFull
             pandoc
             tectonic
             nixpkgs-fmt

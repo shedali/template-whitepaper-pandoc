@@ -1,0 +1,15 @@
+---
+title: Testing
+papersize: a4paper
+classoption: twocolumn
+classes: report
+abstract: a summary of my current state
+titlepage: true
+logo: house.png
+header-right:  \includegraphics{house.png}
+colorlinks: true
+bibliography: references.bib
+template: template.tex
+include-after:
+    - \printnoidxglossary[sort=word]
+---

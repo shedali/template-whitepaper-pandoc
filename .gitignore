@@ -1,2 +1,12 @@
 document.pdf
 .direnv
+*.glg
+*.gls
+*.toc
+*.glo
+*.ist
+*.log
+*.png
+*.tex
+*.pdf
+*.aux
