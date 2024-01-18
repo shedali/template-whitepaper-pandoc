@@ -10,13 +10,13 @@ This compiles paper.md
 #!/bin/bash
 pandoc \
  --toc \
---template filters/template.tex \
+--template template.tex \
 -H glossaries.tex default.yaml \
 --citeproc \
 --bibliography=references.bib \
 --standalone \
 --embed-resources \
- -s paper.md \
+ -s paper/index.md \
  -f markdown \
  -t latex \
  -o doc.tex \
