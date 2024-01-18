@@ -11,6 +11,11 @@ https://github.com/pandoc/lua-filters/tree/master/include-files
 - markdown transclusion
 - front page and logo
 
+## Add cover page
+
+add coverpdf
+
+then set cover: true in frontmatter
 
 ## Tasks
 
