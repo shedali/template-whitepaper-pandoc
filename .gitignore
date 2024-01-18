@@ -10,3 +10,7 @@ document.pdf
 *.tex
 *.pdf
 *.aux
+*.idx
+*.ilg
+*.idx
+*.ind

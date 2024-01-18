@@ -1,5 +1,17 @@
 # Whitepaper Template
 
+
+- uses include-files lua filter to recursively include referenced file
+https://github.com/pandoc/lua-filters/tree/master/include-files
+
+- csv based glossary
+- abbreviated glossary references with glossary-gls
+- index
+- table of contents
+- markdown transclusion
+- front page and logo
+
+
 ## Tasks
 
 ### Compile
@@ -21,7 +33,8 @@ pandoc \
  -t latex \
  -o doc.tex \
 --lua-filter=filters/pandoc-gls.lua \
---pdf-engine=tectonic 
+--lua-filter=filters/include-files.lua \
+--pdf-engine=tectonic
 
 pdflatex doc.tex \
 && makeglossaries doc \

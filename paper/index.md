@@ -1,6 +1,5 @@
 ---
-title: Testing
-papersize: a4paper
+title: Testin
 classoption: twocolumn
 metadata-file: glossary.yml
 classes: report
@@ -30,12 +29,11 @@ references:
 
 ## Table of Contents
 
-This template provides authoring environment for white paper with 
-- csv based glossary
-- abbreviated glossary references with glossary-gls
-- index
-- table of contents
-- front page and logo
+
+``` {.include}
+paper/include.md
+```
+
 
 [@fenner2012a]
 

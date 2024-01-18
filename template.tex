@@ -71,6 +71,17 @@ $for(classoption)$
 $endfor$
   ,captions=tableheading
 ]{$if(beamer)$$documentclass$$else$$if(book)$scrbook$else$scrartcl$endif$$endif$}
+
+\usepackage[T1]{fontenc}
+\usepackage{imakeidx}
+\usepackage{pagecolor}
+\usepackage{afterpage}
+
+\makeindex
+
+
+
+
 $if(beamer)$
 $if(background-image)$
 \usebackgroundtemplate{%
@@ -1095,4 +1106,8 @@ $for(include-after)$
 $include-after$
 
 $endfor$
+
+\printindex
+
 \end{document}
+
