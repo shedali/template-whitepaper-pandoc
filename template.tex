@@ -611,6 +611,7 @@ $endif$
 $if(titlepage)$
 \usepackage{pagecolor}
 \usepackage{afterpage}
+\usepackage{pdfpages} % <-- this goes in the preamble
 $if(titlepage-background)$
 \usepackage{tikz}
 $endif$
@@ -928,8 +929,16 @@ $endif$
 %%
 $if(beamer)$
 $else$
+
+
+$if(coverpage)$
+\includepdf{cover}
+$endif$
+
 $if(titlepage)$
 \begin{titlepage}
+
+
 $if(titlepage-background)$
 \newgeometry{top=2cm, right=4cm, bottom=3cm, left=4cm}
 $else$

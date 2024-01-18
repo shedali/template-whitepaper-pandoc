@@ -4,6 +4,7 @@ classoption: twocolumn
 metadata-file: glossary.yml
 classes: report
 titlepage: true
+coverpage: true
 logo: test.png
 colorlinks: true
 bibliography: references.bib
