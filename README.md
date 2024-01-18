@@ -5,12 +5,14 @@
 
 ### Compile
 
+This compiles paper.md
+
 ```bash
 #!/bin/bash
 # --template template.tex \
 # -H glossaries.tex \
 pandoc \
---template template.tex \
+ --template template.tex \
 -H glossaries.tex \
 --citeproc \
 --bibliography=references.bib \
