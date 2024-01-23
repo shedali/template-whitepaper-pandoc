@@ -40,6 +40,17 @@
 % https://github.com/Wandmalfarbe/pandoc-latex-template
 %%
 
+
+
+
+
+
+
+
+
+
+
+
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode$for(hyperrefoptions)$,$hyperrefoptions$$endfor$}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
@@ -72,12 +83,36 @@ $endfor$
   ,captions=tableheading
 ]{$if(beamer)$$documentclass$$else$$if(book)$scrbook$else$scrartcl$endif$$endif$}
 
-\usepackage[T1]{fontenc}
-\usepackage{imakeidx}
-\usepackage{pagecolor}
-\usepackage{afterpage}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\usepackage{glossaries}
+\usepackage{imakeidx}
+% \usepackage{datatool}
+% \usepackage{graphicx}
+% \graphicspath{ {./attachments/} }
+\usepackage{etoolbox}
+% \usepackage[printwatermark]{xwatermark}
+% \newwatermark*[allpages,color=red!15,angle=45,scale=2.7,xpos=0,ypos=0]{\bfseries\sffamily TOP SECRET!}
+\makeglossaries
 \makeindex
+\usepackage[firstpageonly=false]{draftwatermark}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{1}
+
+
 
 
 
@@ -500,6 +535,8 @@ $endfor$
 $endif$
 $for(header-includes)$
 $header-includes$
+
+
 $endfor$
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
@@ -1107,15 +1144,18 @@ $if(beamer)$
   \printbibliography[heading=none]
 \end{frame}
 $else$
+\clearpage
 \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
 $endif$
 
 $endif$
+
+
 $for(include-after)$
 $include-after$
-
 $endfor$
 
+\clearpage
 \printindex
 
 \end{document}

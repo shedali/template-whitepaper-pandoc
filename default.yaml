@@ -1,17 +1,18 @@
 ---
 title: Testing
 papersize: a4paper
-classoption: twocolumn
+# classoption: twocolumn
 classes: report
-abstract: a summary of my current state
 titlepage: true
 # background-image: skyline.jpg
-titlepage-background: skyline.jpg
-logo: house.png
-header-right:  \includegraphics{house.png}
+# titlepage-background: skyline.jpg
+header-right:  \includegraphics[scale=0.2]{logo.png}
 colorlinks: true
 bibliography: references.bib
 template: template.tex
+glossary: true
 include-after:
-    - \printnoidxglossary[sort=word]
+    - \printglossary
+    - \printglossaries
+    - \printindex
 ---

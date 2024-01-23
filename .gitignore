@@ -14,3 +14,6 @@ document.pdf
 *.ilg
 *.idx
 *.ind
+paper/output.md
+doc.bcf
+*.xml

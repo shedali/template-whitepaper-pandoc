@@ -25,26 +25,29 @@ This compiles paper.md
 
 ```bash
 #!/bin/bash
-pandoc \
+# rm doc*;
+bun paper/flatten.ts paper.md > paper/output.md
+
+bun convert-glossaries-csv-tex.js \
+&& pandoc \
  --toc \
 --template template.tex \
+-H header.tex \
 -H glossaries.tex default.yaml \
+--lua-filter=filters/pandoc-gls.lua \
+--lua-filter=filters/include-files.lua \
 --citeproc \
---bibliography=references.bib \
+--bibliography=/Users/franz/dev/shedali/knowledge/all.bib \
 --standalone \
---embed-resources \
- -s paper/index.md \
+# --embed-resources \
+ -s paper/output.md \
  -f markdown \
  -t latex \
  -o doc.tex \
---lua-filter=filters/pandoc-gls.lua \
---lua-filter=filters/include-files.lua \
---pdf-engine=tectonic
-
-pdflatex doc.tex \
-&& makeglossaries doc \
- && pdflatex doc.tex \
- && pdflatex doc.tex 
+--pdf-engine=tectonic && pdflatex doc.tex \
+&& pdflatex doc.tex \
+&& makeglossaries doc && echo makeglossaries run\
+&& pdflatex doc.tex && open doc.pdf
 ```
 
 

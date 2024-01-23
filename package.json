@@ -3,13 +3,17 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "remark-cli": "^12.0.0",
+    "remark-stringify": "^11.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
     "csv-parse": "^5.5.3",
-    "csvlint": "^0.2.2"
+    "csvlint": "^0.2.2",
+    "remark-content-blocks": "^0.0.9",
+    "remark-parse": "^11.0.0"
   }
 }
